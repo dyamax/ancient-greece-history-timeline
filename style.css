@@ -1,0 +1,764 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: futura;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    background: rgb(11,11,11);
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+/* previous event button */
+
+.prevEventBtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.prevEventBtn a{
+    width: 40px;
+    height: 40px;
+    border: solid white 3px;
+    border-radius: 20px;
+    text-align: center;
+}
+.prevBtn{
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+    transition: .3s;
+}
+.prevLink{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    transition: .3s;
+}
+.prevEventBtn:hover>.prevBtn{
+    color: brown;
+    text-decoration: underline;
+}
+.prevEventBtn:hover>.prevLink{
+    border: solid brown;
+    color: brown;
+}
+
+/* next event button */
+
+.nextEventBtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: .3s;
+}
+.nextEventBtn a{
+    width: 40px;
+    height: 40px;
+    border: solid white 3px;
+    border-radius: 20px;
+    text-align: center;
+}
+.nextBtn{
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: .3s;
+}
+.nextLink{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    transition: .3s;
+}
+.nextEventBtn:hover>.nextBtn{
+    color: brown;
+    text-decoration: underline;
+}
+.nextEventBtn:hover>.nextLink{
+    border: solid brown;
+    color: brown;
+}
+
+/* end of button editing */
+
+.home-link{
+    width: 100%;
+    background: transparent;
+    padding-bottom: 30px;
+    transform: translate(-16px,17px);
+}
+.home{
+    width: 10%;
+    font-size: 20px;
+    color: white;
+    background: transparent;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    transition: .3s;
+}
+.home:hover{
+    text-decoration: underline;
+    color: brown;
+    text-shadow: 0 0 500px white;
+}
+.home-links{
+    float: right;
+    margin: 20px;
+    font-size: 17px;
+    color: black;
+}
+.home-links:hover{
+    text-decoration: none;
+}
+.background-container{
+    height: 500px;
+    background: url(photo/Downfall-of-Troy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gray{
+    height: 100%;
+    background: rgba(11,11,11,0.6);
+}
+.title{
+    color: white;
+    font-size: 100px;
+    padding-top: 150px;
+    margin-left: 20%;
+    transform: translate(-1200px,0);
+    animation: anim 2s;
+    animation-fill-mode: both;
+}
+@keyframes anim{
+    from{transform: translate(-1200px,0);}
+    to{transform: translate(0,0);}
+}
+.title-1{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    padding-top: 150px;
+}
+.subtitle{
+    color: white;
+    font-size: 30px;
+    margin-left: 20%;
+    transform: translate(1200px,-30px);
+    animation: anim1 2s;
+    animation-fill-mode: both;
+}
+@keyframes anim1{
+    from{transform: translate(1200px,-30x);}
+    to{transform: translate(0,-30px);}
+}
+.fade-in{
+    transform: translate(0,-20px);
+    height: 200px;
+    background: linear-gradient(to bottom, transparent, rgb(11,11,11));
+}
+.fade-out{
+    height: 50px;
+    background: linear-gradient(to top, transparent, rgb(255,69,69));
+}
+.fade-out1{
+    height: 50px;
+    background: linear-gradient(to top, transparent, rgb(255, 131, 22));
+}
+.fade-out2{
+    height: 50px;
+    background: linear-gradient(to top, transparent, white);
+}
+.fade-out4{
+    height: 50px;
+    background: linear-gradient(to top, transparent, rgb(255, 176, 107));
+}
+.fade-out5{
+    height: 50px;
+    background: linear-gradient(to top, transparent, white);
+}
+.main-container{
+    height: auto;
+    padding: 40px;
+    background: rgb(11,11,11);
+}
+.timeline{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.line-timeline{
+    transform: translate(0,50px);
+    background: rgb(190, 190, 190);
+    min-height: 1000px;
+    height: auto;
+    margin-bottom: 100px;
+    width: .5%;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgb(190, 190, 190);
+}
+.main-text{
+    font-size: 20px;
+    transform: translate(0,15px);
+}
+/* Div which creates left part flex-direction: column; starts */
+.flex-adapter-left{
+    display: flex;
+    flex-direction: column;
+    width: 49.5%;
+}
+.line-connecter-left{
+    width: 1%;
+    height: 200px;
+    background: rgb(190, 190, 190);
+    transform: rotate(90deg) translate(300px,-570px);
+    box-shadow: 0 0 10px rgb(190, 190, 190);
+}
+.line-connecter-left1{
+    width: 1%;
+    height: 200px;
+    background: rgb(190, 190, 190);
+    transform: rotate(90deg) translate(200px,-570px);
+    box-shadow: 0 0 10px rgb(190, 190, 190);
+
+}
+.line-connecter-left2{
+    width: 1%;
+    height: 200px;
+    background: rgb(190, 190, 190);
+    transform: rotate(90deg) translate(100px,-570px);
+    box-shadow: 0 0 10px rgb(190, 190, 190);
+}
+.event-num1{
+    width: 450px;
+    height: 50px;
+    padding: 10px;
+    border: solid rgb(190, 190, 190) 2px;
+    border-radius: 50px;
+    background: rgb(11,11,11);
+    overflow: hidden;
+    font-size: 35px;
+    color: white;
+    transform: translate(100px,160px);
+    transition: 1s ease-in-out;
+}
+.event-num1:hover{
+    height: 500px;
+    border-radius: 7px;
+    background: rgb(255, 69, 69);
+    box-shadow: 0 0 800px rgb(255, 69, 69);
+    border: none;
+    color: black;
+}
+.event-num1:hover>.num-1{
+    visibility: hidden;
+}
+.num-1{
+    width: 45px;
+    height: 45px;
+    float: right;
+    font-size: 40px;
+    text-align: center;
+    border: solid rgb(190, 190, 190) 2px;
+    border-radius: 50px;
+    transform: translate(.5px,0);
+    box-shadow: 0 0 10px rgb(190, 190, 190);
+}
+.event-num3{
+    width: 450px;
+    padding: 10px;
+    height: 50px;
+    border: solid rgb(190, 190, 190) 2px;
+    border-radius: 50px;
+    background: rgb(11,11,11);
+    overflow: hidden;
+    font-size: 35px;
+    color: white;
+    transform: translate(100px,60px);
+    transition: 1s ease-in-out;
+}
+.event-num3:hover{
+    height: 500px;
+    border-radius: 7px;
+    background: rgb(255, 131, 22);
+    box-shadow: 0 0 800px rgb(255, 131, 22);
+    border: none;
+    color: black;
+}
+.event-num3:hover>.num-3{
+    visibility: hidden;
+}
+.num-3{
+    width: 45px;
+    height: 45px;
+    float: right;
+    font-size: 40px;
+    text-align: center;
+    border: solid rgb(190, 190, 190) 2px;
+    border-radius: 50px;
+    transform: translate(.5px,0);
+    box-shadow: 0 0 10px rgb(190, 190, 190);
+}
+.event-num5{
+    width: 450px;
+    padding: 10px;
+    height: 50px;
+    border: solid rgb(190, 190, 190);
+    border-radius: 50px;
+    background: rgb(11,11,11);
+    overflow: hidden;
+    font-size: 35px;
+    color: white;
+    transform: translate(100px,-40px);
+    transition: 1s ease-in-out;
+}
+.event-num5:hover{
+    height: 500px;
+    border-radius: 7px;
+    background: white;
+    box-shadow: 0 0 800px white;
+    border: none;
+    color: black;
+}
+.event-num5:hover>.num-5{
+    visibility: hidden;
+}
+.num-5{
+    width: 45px;
+    height: 45px;
+    float: right;
+    font-size: 40px;
+    text-align: center;
+    border: solid rgb(190, 190, 190) 2px;
+    border-radius: 50px;
+    transform: translate(.5px,0);
+    box-shadow: 0 0 10px rgb(190, 190, 190);
+}
+/* Div which creates left part flex-direction: column; ends */
+/* Div which creates right part flex-direction: column; starts */
+.flex-adapter-right{
+    display: flex;
+    flex-direction: column;
+    width: 49.5%;
+}
+.line-connecter-right{
+    width: 1%;
+    height: 200px;
+    background: rgb(190, 190, 190);
+    transform: rotate(90deg) translate(390px,-90px);
+    box-shadow: 0 0 10px rgb(190, 190, 190);
+}
+.line-connecter-right1{
+    width: 1%;
+    height: 200px;
+    background: rgb(190, 190, 190);
+    transform: rotate(90deg) translate(290px,-90px);
+    box-shadow: 0 0 10px rgb(190, 190, 190);
+}
+.line-connecter-right2{
+    width: 1%;
+    height: 200px;
+    background: rgb(190, 190, 190);
+    transform: rotate(90deg) translate(190px,-90px);
+    box-shadow: 0 0 10px rgb(190, 190, 190);
+}
+.event-num2{
+    width: 450px;
+    padding: 10px;
+    height: 50px;
+    border: solid rgb(190, 190, 190);
+    border-radius: 50px;
+    background: rgb(11,11,11);
+    overflow: hidden;
+    font-size: 35px;
+    color: white;
+    transform: translate(100px,250px);
+    transition: 1s ease-in-out;
+}
+.event-num2:hover{
+    height: 500px;
+    border-radius: 7px;
+    background: white;
+    box-shadow: 0 0 800px white;
+    border: none;
+    color: black;
+}
+.event-num2:hover>.num-2{
+    visibility: hidden;
+    float: right;
+}
+.num-2{
+    width: 45px;
+    height: 45px;
+    float: left;
+    font-size: 40px;
+    text-align: center;
+    border: solid rgb(190, 190, 190) 2px;
+    border-radius: 50px;
+    transform: translate(.5px,0);
+    box-shadow: 0 0 10px rgb(190, 190, 190);
+}
+.event-num4{
+    width: 450px;
+    padding: 10px;
+    margin-bottom: 200px;
+    height: 50px;
+    border: solid rgb(190, 190, 190);
+    border-radius: 50px;
+    background: rgb(11,11,11);
+    overflow: hidden;
+    font-size: 35px;
+    color: white;
+    transform: translate(100px,150px);
+    transition: 1s ease-in-out;
+}
+.event-num4:hover{
+    height: 500px;
+    border-radius: 7px;
+    background: rgb(255, 176, 107);
+    box-shadow: 0 0 800px rgb(255, 176, 107);
+    border: none;
+    color: black;
+}
+.event-num4:hover>.num-4{
+    visibility: hidden;
+    float: right;
+}
+.num-4{
+    width: 45px;
+    height: 45px;
+    float: left;
+    font-size: 40px;
+    text-align: center;
+    border: solid rgb(190, 190, 190) 2px;
+    border-radius: 50px;
+    transform: translate(.5px,0);
+    box-shadow: 0 0 10px rgb(190, 190, 190);
+}
+/* Div which creates left part flex-direction: column; ends */
+.event-photo{
+    transform: translate(0,50px);
+    background: url(photo/Downfall-of-Troy.png);
+    transform: translate(-10px,45px);
+    width: 470px;
+    height: 210px;
+    background-size: cover;
+}
+.event-photo1{
+    background: url(photo/First-Olympics-Games.jpg);
+    transform: translate(-10px,45px);
+    width: 470px;
+    height: 210px;
+    background-size: cover;
+}
+.event-photo2{
+    margin-top: 50px;
+    background: url(photo/alphabet_greek.png);
+    transform: translate(-10px,45px);
+    width: 470px;
+    height: 210px;
+    background-size: cover;
+}
+.event-photo4{
+    background: url(photo/The-Persian-Wars.jpg);
+    transform: translate(-10px,45px);
+    width: 470px;
+    height: 210px;
+    background-size: cover;
+}
+.event-photo5{
+    background: url(photo/peloponnesian-war.jpg);
+    transform: translate(-10px,45px);
+    width: 470px;
+    height: 210px;
+    background-size: cover;
+}
+
+                                                                    /* Trojan War page */
+
+.background-container-1{
+    height: 500px;
+    background: url(photo/trojan-war.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.event-overview{
+    font-size: 20px;
+    color: white;
+    padding-left: 400px;
+    padding-right: 400px;
+    line-height: 2;
+    text-align: justify;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+.button-event-text{
+    width: 230px;
+    height: auto;
+    background: rgb(150,150,150,.1);
+    border: none;
+    color: white;
+    font-size: 27px;
+    box-shadow: 
+    1px -1px 0 rgb(150,150,150),
+    2px -2px 0 rgb(150,150,150),
+    3px -3px 0 rgb(150,150,150),
+    4px -4px 0 rgb(150,150,150),
+    5px -5px 0 rgb(150,150,150),
+    6px -6px 0 rgb(150,150,150),
+    7px -7px 0 rgb(150,150,150),
+    8px -8px 0 rgb(150,150,150),
+    9px -9px 0 rgb(150,150,150),
+    10px -10px 0 rgb(150,150,150);
+    transition: .3s;
+}
+.button-event-text:hover{
+    /* background: rgb(140,140,140,.1); */
+    box-shadow: 0 0 500px white;
+}
+.background-container-trojan-war-causes{
+    height: 500px;
+    background: url(photo/trojan-war-causes.jpg);
+    background-size: cover;
+}
+.background-container-trojan-war-origin-of-the-war{
+    height: 500px;
+    background: url(photo/trojan-war-origin-of-the-war.png);
+    background-size: cover;
+}
+.background-container-trojan-war-span{
+    height: 500px;
+    background: url(photo/trojan-war-span.jpg);
+    background-size: cover;
+}
+.background-container-trojan-war-legend{
+    height: 500px;
+    background: url(photo/trojan-war-legend.jpg);
+    background-size: cover;
+}
+.background-container-trojan-war-results{
+    height: 500px;
+    background: url(photo/trojan-war-results.jpg);
+    background-size: cover;
+}
+.black{
+    height: 100%;
+    background: rgba(11,11,11,.6);
+}
+.fade-out-simple{
+    height: 200px;
+    background: linear-gradient(to top, transparent, rgb(11,11,11));
+}
+.fade-in-simple{
+    transform: translate(0,-110px);
+    height: 200px;
+    background: linear-gradient(to bottom, transparent, rgb(11,11,11));
+}
+.fade-in-simple-1{
+    transform: translate(0,100px);
+    height: 200px;
+    background: linear-gradient(to bottom, transparent, rgb(11,11,11));
+}
+.fade-in-simple-2{
+    transform: translate(0,20px);
+    height: 200px;
+    background: linear-gradient(to bottom, transparent, rgb(11,11,11));
+}
+.hidden-text-left{
+    width: 50%;
+    margin-left: 60px;
+    transform: translate(0,-50px);
+    color: white;
+    font-size: 16px;
+}
+.hidden-text-left-1{
+    width: 50%;
+    margin-left: 60px;
+    transform: translate(0,10px);
+    color: white;
+    font-size: 16px;
+}
+.hidden-text-right{
+    width: 50%;
+    margin-right: 60px;
+    transform: translate(0,-80px);
+    color: white;
+    font-size: 16px;
+    float: right;
+}
+
+                                                                    /* Alphabet page */
+
+
+.background-container-2{
+    height: 500px;
+    background: url(photo/alphabet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}     
+.background-container-alphabet-LD{
+    height: 500px;
+    background: url(photo/aplabet-LD.jpg);
+    background-size: cover;
+}
+.background-container-alphabet-HdA{
+    height: 500px;
+    background: url(photo/alphabet-HdA.jpg);
+    background-size: cover;
+}
+.background-container-alphabet-HgA{
+    height: 500px;
+    background: url(photo/alphabet-HgA.jpg);
+    background-size: cover;
+}
+.background-container-alphabet-DA{
+    height: 500px;
+    background: url(photo/alphabet-DA.jpg);
+    background-size: cover;
+}
+.background-container-alphabet-PA{
+    height: 500px;
+    background: url(photo/alphabet-PA.jpg);
+    background-size: cover;
+}
+
+                                                                    /* First Olympic Games page */
+
+
+.background-container-3{
+    height: 500px;
+    background: url(photo/First-Olympics-Games.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}     
+.background-container-FOG-OM{
+    height: 500px;
+    background: url(photo/FOG-origin-mythology.jpg);
+    background-size: cover;
+}
+.background-container-FOG-history{
+    height: 500px;
+    background: url(photo/FOG-his.jpg);
+    background-size: cover;
+}
+.background-container-FOG-location{
+    height: 500px;
+    background: url(photo/FOG-location.jpg);
+    background-size: cover;
+}
+.background-container-FOG-culture{
+    height: 500px;
+    background: url(photo/FOG-culture.jpg);
+    background-size: cover;
+}
+.background-container-FOG-politics{
+    height: 500px;
+    background: url(photo/FOG-politics.jpg);
+    background-size: cover;
+}
+
+                                                                    /* Greco-Persian wars */
+
+
+.background-container-4{
+    height: 500px;
+    background: url(photo/greco-persian-wars.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}     
+.background-container-GPW-ootc{
+    height: 500px;
+    background: url(photo/greco-persian-origin-of-the-conflict.jpg);
+    background-size: cover;
+}
+.background-container-GPW-CbPamG{
+    height: 500px;
+    background: url(photo/greco-persian-contact-between-persia-and-mainland-greece.jpg);
+    background-size: cover;
+}
+.background-container-GPW-Ir{
+    height: 500px;
+    background: url(photo/greco-persian-ionian-revolt.jpg);
+    background-size: cover;
+}
+.background-container-GPW-FioG{
+    height: 500px;
+    background: url(photo/greco-persian-first-invasion-of-greece.jpg);
+    background-size: cover;
+}
+.background-container-GPW-BoM{
+    height: 500px;
+    background: url(photo/greco-persian-battle-of-marathon.jpg);
+    background-size: cover;
+}
+
+.background-container-GPW-SioG{
+    height: 500px;
+    background: url(photo/greco-persian-second-ivasion-of-greece.png);
+    background-size: cover;
+}
+.background-container-GPW-Gc{
+    height: 500px;
+    background: url(photo/greco-persian-greek-counterattack.jpg);
+    background-size: cover;
+}
+.background-container-GPW-WotDL{
+    height: 500px;
+    background: url(photo/greco-persian-delian-league.jpg);
+    background-size: cover;
+}
+.background-container-GPW-PwP{
+    height: 500px;
+    background: url(photo/greco-persian-peace-with-persia.jpg);
+    background-size: cover;
+}
+.background-container-GPW-Aftermath{
+    height: 500px;
+    background: url(photo/greco-persian-aftermath.jpg);
+    background-size: cover;
+}
+                                                                    /* The Peloponnesian war */
+
+
+.background-container-5{
+    height: 500px;
+    background: url(photo/peloponnesian-war.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}     
+.background-container-PW-prelude{
+    height: 500px;
+    background: url(photo/peloponnesian-war-prelude.jpg);
+    background-size: cover;
+}
+.background-container-PW-breakdown{
+    height: 500px;
+    background: url(photo/peloponnesian-war-breakdown-of-peac.jpg);
+    background-size: cover;
+}
+.background-container-PW-SE{
+    height: 500px;
+    background: url(photo/peloponnesian-war-se.jpg);
+    background-size: cover;
+}
+.background-container-PW-SW{
+    height: 500px;
+    background: url(photo/peloponnesian-war-second-war.jpg);
+    background-size: cover;
+}
+.background-container-PW-defeat{
+    height: 500px;
+    background: url(photo/peloponnesian-war-athenian-defeat.jpg);
+    background-size: cover;
+}
